@@ -1,19 +1,16 @@
-
-<div class="wrapper">
-  <center> <a href="/index.html"><div class="site-title">   {{site.title}} </div></a></center>
-</div>
-<div class="wrapper site-description">
-<center>  {{site.description}} </center>
-</div>
-<div class="wrapper">
-  <div class="trigger site-navigation">
-    <a class="page-link" href="{{site.url}}{{site.baseurl}}">HOME</a>
-
-    {% for sitePage in site.pages %}
-    {% if sitePage.title %}
-
-    <span class="exclamationMark">/</span><a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a>
-    {% endif %}
-    {% endfor %}
+<header id="header">
+  <div class="wrapper">
+    <nav>
+      {% if page.nav != 'home' %}
+        <a href=" /">Home</a>
+        <a href=" /blog ">Blog</a>
+        <a href=" /feed.xml "><i class="fa fa-rss" aria-hidden="true"></i></a>
+      {% else %}
+        <a href=" # ">Home</a>
+        <a href=" #about ">About</a>
+        <a href=" #blog ">Blog</a>
+        <a href=" #projects">Projects</a>
+      {% endif %}
+    </nav>
   </div>
-</div>
+</header>
