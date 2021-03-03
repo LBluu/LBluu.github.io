@@ -1,37 +1,45 @@
-# Pudhina
-A simple, minimal [Jekyll](jekyllrb.com) theme for a personal web page and blog, focusing on white space and readability
+# Leonids Gatsby starter
 
-[Click here](https://knhash.github.io/Pudhina/) to see the theme in action. Note that the download PDF button redirects to 404 due to lack of the file. This is by design, to demonstrate the Glitch effect therein.
+**[Leonids](http://renyuanz.github.io/leonids)** is a clean, fixed sidebar Gatsby starter which is perfect for powering your GitHub hosted blog.
 
-## Screenshots
+### Preview
 
-![Home](https://raw.githubusercontent.com/Knhash/Pudhina/master/screenshots/home.png?raw=true "Home") 
-![Blog](https://raw.githubusercontent.com/Knhash/Pudhina/master/screenshots/blog.png?raw=true "Blog") 
-![Resume](https://raw.githubusercontent.com/Knhash/Pudhina/master/screenshots/resume.png?raw=true "Resume") 
-![Post](https://raw.githubusercontent.com/Knhash/Pudhina/master/screenshots/post.png?raw=true "Post") 
-![404](https://raw.githubusercontent.com/Knhash/Pudhina/master/screenshots/404.png?raw=true "404") 
+![theme-preview](./content/assets/theme-preview.gif)
 
-## Features
-- Simple, minimal and clean
-- Blog posts categorised
-- Responsive
-- Syntax Highlighter (using [highlight.js](https://highlightjs.org/)).
-- Font-Awesome Icons.
-- Glitchy 404 page
+## What is Leonids?
 
-## How to use it
-- Start by cloning the repository, then check the `_config.yml` file and change it accordingly. Note that the `title` property is what will be displayed as logo.
-- Execute `jekyll serve` and head to [localhost:4000](http://127.0.0.1:4000) to see the results locally.
+A blazing fast static blog theme built on Gatsby.js
 
-## Customization
-- Change main picture and icon in `/assets/img/pudhina`.  
-- Change main details regarding site in `_config.yml`.
-- Configure `index.md` for the main page, `blog.md` for Blog listing and `resume.md` for Resume page.
-- CSS properties can be found in `/assets/css/main.css`.
-- New posts to be created in the `/_posts/` directory, follow the naming convention used in samples. Front-matter requires title, subtitle, categories and date.
+![lighthouse-performance](./content/assets/lighthouse-performance.png)
 
-## Credits
-Inspired by the theme [Daktilo](https://github.com/kronik3r/daktilo)
+- Responsive templates. Looking good on any viewport.
+- Fixed sidebar to provide a good navigation experience while reading.
+- Light/Dark mode.
+- **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
 
-## License
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub pages.
+
+## Getting Started (Recommended)
+
+### Vercel.com deploy button
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Frenyuanz%2Fleonids)
+
+### Netlify CMS deploy button
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/renyuanz/leonids&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+
+## Local development setup
+
+```
+gatsby new my-blog https://github.com/renyuanz/leonids
+cd my-blog
+gatsby develop
+```
+
+Check out your awesome blog at `http://localhost:8000` and Cheers!
+
+
+## Legacy Jekyll theme
+
+This project was a Jekyll blog theme, which is archived and not maintained any more. You can still find the source code in [leonids-jekyll](https://github.com/renyuanz/leonids/tree/leonids-jekyll) branch.
