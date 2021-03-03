@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "音频预处理"
-subtitle: "查资料纪实"
-date:   2021-03-03 10:46:21 +0530
+title:  "Sample"
+subtitle: "A longer explanation of stuff"
+date:   2016-05-20 21:21:21 +0530
 categories: ["general"]
 ---
 
