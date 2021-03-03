@@ -1,16 +1,16 @@
 # Site settings
-title: Lblue
+title: Pudhina
 description: >
-  Study between meals and sleep!
+  A simple, minimal Jekyll theme for a personal web page and blog, focusing on white space and readability
 
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "https://lbluu.github.io" # the base hostname & protocol for your site
+baseurl: "/Pudhina" # the subpath of your site, e.g. /blog/
+url: "https://knhash.github.io" # the base hostname & protocol for your site
 
 author:
-  fullname: 李不
-  github: LBluu
-  linkedin: 李布
-  email: lblueblue@buaa.edu.cn
+  fullname: Pudhina
+  github: github
+  linkedin: linkedin
+  email: example@email.com
 
 
 # Syntax highlighting
