@@ -1,24 +1,29 @@
 title: "LBlue-Thought-Bubble"
-tagline: "study between meal and sleep!"
-description: "This is a time machine for me."
+email: lblueblue@buaa.edu.cn
+# tagline: "study between meal and sleep!"
+description: >-
+  This is a time machine for me.
 github_username: LBluu
-baseurl: ""
+baseurl: "/blog"
 url: "https://LBluu.github.io"
 
 plugins:
+  - jekyll-remote-theme
   - jemoji
-  - jekyll-sitemap
-  - jekyll-seo-tag
+
+# Including jekyll-shell-theme using the jekyll-remote-theme plugin
+remote_theme: tareqdandachi/jekyll-shell-theme
 
 sass:
   style: compressed
 
-highlighter: rouge
+highlighter: rouge #selecting the highlighter, default is rouge
 
 header_pages:
   - index.md
-  - read-me.md
-  - preview.md
+  - about.md
+  - a-third-page.md
 
-# set the size of the text to 'large' or 'small', default is small
-font-size: small
+# controls how big the shell and font looks
+font-size: small # options: [small] or [large]
+
