@@ -1,27 +1,24 @@
-title: "LBlue-Thought-Bubble"
-email: lblueblue@buaa.edu.cn
-# tagline: "study between meal and sleep!"
-description: >-
-  This is a time machine for me.
-github_username: LBluu
-baseurl: "/blog"
-url: "https://LBluu.github.io"
+title: LBlue's Thought Bubble
+description: > # this means to ignore newlines until "baseurl:"
+  This is a time machine for me<br>
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://LBluu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-plugins:
-  - jemoji
-  - jekyll-sitemap
-  - jekyll-seo-tag
 
-sass:
-  style: compressed
+author:
+  name: 'LBlue'
+  last_name: ''
+  cv: ''
+  avatar: '/images/avatar.jpeg'
+  github_username:  LBluu  
+  email: lblueblue@buaa.edu.cn
+  vk_id: 
+  telegram_name: 
+  logo: '/images/logo.svg'
 
-highlighter: rouge
+# Build settings
+markdown: kramdown
 
-header_pages:
-  - index.md
-  - read-me.md
-  - preview.md
+permalink: /:categories/:year/:title.html
 
-# set the size of the text to 'large' or 'small', default is small
-font-size: small
 
