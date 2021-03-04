@@ -1,33 +1,42 @@
 ---
-layout: default
+layout: articles
+titles:
+  # @start locale config
+  en      : &EN       Home
+  en-GB   : *EN
+  en-US   : *EN
+  en-CA   : *EN
+  en-AU   : *EN
+  zh-Hans : &ZH_HANS  主页
+  zh      : *ZH_HANS
+  zh-CN   : *ZH_HANS
+  zh-SG   : *ZH_HANS
+  zh-Hant : &ZH_HANT  主頁
+  zh-TW   : *ZH_HANT
+  zh-HK   : *ZH_HANT
+  ko      : &KO       홈
+  ko-KR   : *KO
+  fr      : &FR       Accueil
+  fr-BE   : *FR
+  fr-CA   : *FR
+  fr-CH   : *FR
+  fr-FR   : *FR
+  fr-LU   : *FR
+  # @end locale config
+show_title: false
+articles:
+  data_source: paginator.posts
+  article_type: BlogPosting
+  show_cover: false
+  show_excerpt: true
+  show_readmore: true
+  show_info: true
 ---
-<!-- Post -->
-{% for post in site.posts %} 
-  <article class="post">
-    <header>
-      <div class="title">
-      <span class="image left image-icon"><a href="{{ post.url | relative_url }}"><img src="{{ site.baseurl}}/images/{{ post.icon }}.svg" style="width: 4em;" alt="{{ post.icon }}"></a></span>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
-      </div>
-      <div class="meta">
-        <time class="published" datetime="{{ post.date }}">{{ post.date | date: "%d %b %Y %R" }}</time>
-        <a href="{{ site.author.cv }}" class="author"><span class="name">V.{{ site.author.last_name }}</span><img src="{{ site.author.avatar | prepend: site.baseurl }}" alt="VKapitonenko" /></a>
-      </div>
-    </header>
-    {% if post.image %}
-      <a href="{{ post.url | relative_url }}" class="image featured"><img src="/post-img/{{ post.category }}/{{ post.image }}" alt="{{ post.title }}"></a>
-    {% endif %}
-    {% if post.preview != 0 %}
-      <p>{{ post.content | truncatewords: 35 }}</p>
-    {% endif %}
-    <footer> 
-      <ul class="actions">
-        <li><a href="{{ post.url | relative_url }}" class="button big">Читать Далее</a></li>
-      </ul>
-      <ul class="stats">
-        <li><a class="icon" href="{{ site.baseurl }}/{{ post.category }}"><i class="fas fa-fw fa-folder"></i> {{ post.category }}</a></li>
-        <li><a href="//github.com/ViKapitoshka/blog/edit/master/{{ page.path }}" class="icon"><i class="fas fa-fw fa-edit"></i> Edit</a></li>
-      </ul>
-    </footer>
-  </article>
-{% endfor %}
+<div class="layout--home">
+  {%- include paginator.html -%}
+</div>
+<script>
+  {%- include scripts/home.js -%}
+</script>
+
+{{ content }}
